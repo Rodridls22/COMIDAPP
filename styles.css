@@ -96,3 +96,43 @@ border-radius: 4px; /* Bordes redondeados */
     padding: 10px;
     border-radius: 10px;
 }
+#searchForm {
+  display: flex;
+  align-items: center;
+}
+
+#searchForm .form-control {
+  width: 200px;
+}
+
+#searchForm .btn {
+  margin-left: 5px;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+header.bg-light {
+  background: #f8f9fa;
+}
+
+header h1 {
+  font-weight: bold;
+}
+
+main h2 {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
