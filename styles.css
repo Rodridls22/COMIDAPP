@@ -44,3 +44,15 @@ body {
       margin-right: 1rem; /* Espaciado a la derecha del botón del menú colapsado */
   }
 }
+/* Estilos para el footer */
+.footer {
+    background-color: #343a40; /* Color de fondo oscuro */
+    color: #f8f9fa; /* Color de texto claro */
+    padding: 1rem 0; /* Espaciado interno */
+    font-size: 0.9rem; /* Tamaño del texto */
+}
+
+.footer p {
+    margin: 0; /* Sin márgenes para el párrafo */
+}
+
