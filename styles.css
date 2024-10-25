@@ -1,73 +1,98 @@
 /* Estilos generales para el cuerpo y la estructura principal */
 html, body {
-    height: 100%; /* Asegura que el cuerpo ocupe toda la altura */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+  height: 100%; /* Asegura que el cuerpo ocupe toda la altura */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Contenedor principal para el contenido de la página */
 main {
-    flex: 1; /* Toma el espacio restante entre el header y el footer */
+  flex: 1; /* Toma el espacio restante entre el header y el footer */
 }
 
 /* Estilos para el footer */
 .footer {
-    background-color: #343a40; /* Color de fondo oscuro */
-    color: #f8f9fa; /* Color de texto claro */
-    padding: 1rem 0; /* Espaciado interno */
-    font-size: 0.9rem; /* Tamaño del texto */
-    text-align: center;
+  background-color: #343a40; /* Color de fondo oscuro */
+  color: #f8f9fa; /* Color de texto claro */
+  padding: 1rem 0; /* Espaciado interno */
+  font-size: 0.9rem; /* Tamaño del texto */
+  text-align: center;
 }
 
 /* Estilo del navbar */
 .navbar {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el nav */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el nav */
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
+font-size: 1.5rem;
+font-weight: bold;
 }
 
 .navbar-nav .nav-link {
-  color: #f8f9fa; /* Color de los enlaces */
-  padding: 0.7rem 1rem; /* Espaciado interno para los enlaces */
-  transition: color 0.3s ease, background-color 0.3s ease;
+color: #f8f9fa; /* Color de los enlaces */
+padding: 0.7rem 1rem; /* Espaciado interno para los enlaces */
+transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffc107; /* Color al pasar el mouse */
-  background-color: rgba(255, 255, 255, 0.1); /* Fondo ligero al pasar el mouse */
-  border-radius: 4px; /* Bordes redondeados */
+color: #ffc107; /* Color al pasar el mouse */
+background-color: rgba(255, 255, 255, 0.1); /* Fondo ligero al pasar el mouse */
+border-radius: 4px; /* Bordes redondeados */
 }
 
 /* Estilo para pantallas pequeñas */
 @media (max-width: 992px) {
-  .navbar-nav {
-      background-color: #343a40; /* Fondo oscuro para el nav colapsado */
-      text-align: left; /* Cambiar la alineación de los enlaces */
-      padding-left: 1rem; /* Espaciado a la izquierda para los enlaces */
-  }
+.navbar-nav {
+    background-color: #343a40; /* Fondo oscuro para el nav colapsado */
+    text-align: left; /* Cambiar la alineación de los enlaces */
+    padding-left: 1rem; /* Espaciado a la izquierda para los enlaces */
+}
 
-  .navbar-nav .nav-item {
-      margin: 0; /* Sin espacio entre los elementos del menú */
-  }
+.navbar-nav .nav-item {
+    margin: 0; /* Sin espacio entre los elementos del menú */
+}
 
-  .navbar-toggler {
-      margin-right: 1rem; /* Espaciado a la derecha del botón del menú colapsado */
-  }
+.navbar-toggler {
+    margin-right: 1rem; /* Espaciado a la derecha del botón del menú colapsado */
+}
 }
 /* Estilos para el footer */
 .footer {
-    background-color: #343a40; /* Color de fondo oscuro */
-    color: #f8f9fa; /* Color de texto claro */
-    padding: 1rem 0; /* Espaciado interno */
-    font-size: 0.9rem; /* Tamaño del texto */
+  background-color: #343a40; /* Color de fondo oscuro */
+  color: #f8f9fa; /* Color de texto claro */
+  padding: 1rem 0; /* Espaciado interno */
+  font-size: 0.9rem; /* Tamaño del texto */
 }
 
 .footer p {
-    margin: 0; /* Sin márgenes para el párrafo */
+  margin: 0; /* Sin márgenes para el párrafo */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 50%; /* Bordes redondeados */
+    width: 25px; /* Tamaño reducido */
+    height: 25px; /* Tamaño reducido */
 }
 
+.carousel-item img {
+    width: 100%;
+    height: 300px; /* Ajusta la altura según lo necesites */
+    object-fit: cover; /* Para que las imágenes se adapten al contenedor */
+}
+
+.carousel-indicators li {
+    background-color: #fff; /* Color blanco para los indicadores */
+    border-radius: 50%; /* Bordes redondeados */
+    width: 12px; /* Tamaño reducido */
+    height: 12px; /* Tamaño reducido */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para texto */
+    padding: 10px;
+    border-radius: 10px;
+}
