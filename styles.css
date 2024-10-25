@@ -1,0 +1,46 @@
+/* Estilos generales para el cuerpo */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Color de fondo suave */
+}
+
+/* Estilo del navbar */
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el nav */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #f8f9fa; /* Color de los enlaces */
+  padding: 0.7rem 1rem; /* Espaciado interno para los enlaces */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* Color al pasar el mouse */
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo ligero al pasar el mouse */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 992px) {
+  .navbar-nav {
+      background-color: #343a40; /* Fondo oscuro para el nav colapsado */
+      text-align: left; /* Cambiar la alineación de los enlaces */
+      padding-left: 1rem; /* Espaciado a la izquierda para los enlaces */
+  }
+
+  .navbar-nav .nav-item {
+      margin: 0; /* Sin espacio entre los elementos del menú */
+  }
+
+  .navbar-toggler {
+      margin-right: 1rem; /* Espaciado a la derecha del botón del menú colapsado */
+  }
+}
